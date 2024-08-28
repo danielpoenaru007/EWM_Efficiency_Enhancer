@@ -89,14 +89,9 @@
       },
       "": {
         "dataSource": "mainService",
-        "preload": true,
+        "preload": false,
         "settings": {
-          "defaultBindingMode": "TwoWay",
-          
-          "refreshAfterChange": false,
-          "metadataUrlParams": {
-            "sap-value-list": "none"
-          }
+          "defaultBindingMode": "TwoWay"
         }
       }
     },

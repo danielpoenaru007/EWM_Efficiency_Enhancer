@@ -9,24 +9,7 @@
     xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
 	height="100%">
 
-		<m:VBox id="_IDGenVBox1" fitContainer="true">
-<smartFilterBar:SmartFilterBar id="smartFilterBar" entitySet="Material" persistencyKey="SmartTableAnalytical_Explored"  enableBasicSearch="true">
-                    <smartFilterBar:layoutData>
-                        <m:FlexItemData id="_IDGenFlexItemData1" shrinkFactor="0"/>
-                    </smartFilterBar:layoutData>
-                </smartFilterBar:SmartFilterBar>
-				<smartTable:SmartTable id="LineItemsSmartTable" entitySet="Material" smartFilterId="smartFilterBar" tableType="ResponsiveTable" 
-                enableExport="true" beforeExport="onBeforeExport" useVariantManagement="true" useTablePersonalisation="true" header="Line Items" 
-                showRowCount="true" persistencyKey="SmartTableAnalytical_Explored" enableAutoBinding="true" class="sapUiResponsiveContentPadding" 
-                enableAutoColumnWidth="true" editTogglable="true" showDetailsButton="true" detailsButtonSetting="Medium,Low" demandPopin="true"
-                app:useSmartField = "true" editToggled="onEditToggled"> 
-                    <smartTable:layoutData>
-                        <m:FlexItemData id="_IDGenFlexItemData2" growFactor="1" baseSize="0%"/>
-                    </smartTable:layoutData> 
-                </smartTable:SmartTable>
-		</m:VBox>
-
-	<!-- <DynamicPage id="dynamicPage" fitContent="true">
+	 <DynamicPage id="dynamicPage" fitContent="true">
 		<header>
 			<DynamicPageHeader id="_IDGenDynamicPageHeader1">
 				<smartFilterBar:SmartFilterBar id="smartFilterBar" entitySet="Material" persistencyKey="SmartTableAnalytical_Explored"  enableBasicSearch="true">
@@ -39,7 +22,7 @@
 		<content>
 			<smartTable:SmartTable id="LineItemsSmartTable" entitySet="Material" smartFilterId="smartFilterBar" tableType="ResponsiveTable" 
                 enableExport="true" beforeExport="onBeforeExport" useVariantManagement="true" useTablePersonalisation="true" header="Line Items" 
-                showRowCount="true" persistencyKey="SmartTableAnalytical_Explored" enableAutoBinding="true" class="sapUiResponsiveContentPadding" 
+                showRowCount="true" persistencyKey="listReportFloorplanTable" enableAutoBinding="false" class="sapUiResponsiveContentPadding" 
                 enableAutoColumnWidth="true" editTogglable="true" showDetailsButton="true" detailsButtonSetting="Medium,Low" demandPopin="true"
                 app:useSmartField = "true" editToggled="onEditToggled"> 
                     <smartTable:layoutData>
@@ -47,6 +30,6 @@
                     </smartTable:layoutData> 
                 </smartTable:SmartTable>
 		</content>
-	</DynamicPage> -->
+	</DynamicPage> 
 </mvc:View>
 
