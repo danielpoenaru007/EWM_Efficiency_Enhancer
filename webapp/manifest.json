@@ -15,24 +15,25 @@
       "version": "1.14.4",
       "toolsId": "c4586e57-e9a3-4aea-a475-fff379723831"
     },
+    
     "dataSources": {
       "mainService": {
-        "uri": "/sap/opu/odata/sap/ZEWM_MATERIAL_V2/",
+        "uri": "/sap/opu/odata/sap/ZEWM_MATERIAL_SRV/",
         "type": "OData",
         "settings": {
           "annotations": [
-            "ZEWM_MATERIAL_V2_VAN",
+            "ZEWM_MATERIAL_ANNO_MDL",
             "annotation"
           ],
           "localUri": "localService/metadata.xml",
           "odataVersion": "2.0"
         }
       },
-      "ZEWM_MATERIAL_V2_VAN": {
-        "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZEWM_MATERIAL_V2_VAN',Version='0001')/$value/",
+      "ZEWM_MATERIAL_ANNO_MDL": {
+        "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZEWM_MATERIAL_ANNO_MDL',Version='0001')/$value/",
         "type": "ODataAnnotation",
         "settings": {
-          "localUri": "localService/ZEWM_MATERIAL_V2_VAN.xml"
+          "localUri": "localService/ZEWM_MATERIAL_ANNO_MDL.xml"
         }
       },
       "annotation": {

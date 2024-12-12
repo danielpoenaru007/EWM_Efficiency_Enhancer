@@ -1,0 +1,44 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.comp.smartform"
+    xmlns:sf="sap.ui.comp.smartfield">
+	<Dialog id="massChangeDialog" title="{i18n>dialogMassChange}" contentWidth="20%" draggable="true" resizable="true"	>
+    <content>
+    	<form:SmartForm id="SF1"  editable="true">
+			<form:layout>
+				<form:ColumnLayout id="_IDGenColumnLayout" columnsM="1" columnsL="1" columnsXL="1"/>
+			</form:layout>
+            <form:Group id="G1" >
+    			<form:GroupElement id="G1-fields">
+					<sf:SmartField id="PutAway"  value="{PutawayControl}" />
+				</form:GroupElement>
+                <form:GroupElement id="G2-fields">
+                    <sf:SmartField id="StorSectInd"  value="{StorSectInd}" />
+                    
+				</form:GroupElement>
+                	<form:GroupElement id="G3-fields">
+                        <sf:SmartField id="StockRemovalCtrl"  value="{StockRemovalCtrl}" />
+				</form:GroupElement>
+                <form:GroupElement id="G4-fields">
+                    <sf:SmartField id="BulkStorage"  value="{BulkStorage}" />
+				</form:GroupElement>
+          	</form:Group>
+		</form:SmartForm>      
+    </content>
+    <footer>
+			<Toolbar id="_IDGenToolbar1">
+				<content>
+					<ToolbarSpacer id="_IDGenToolbarSpacer" />
+					<Button id="apply" 
+							text="{i18n>Apply}"
+							press=".applyMassChange" />
+					<Button id="cancel"
+						text="{i18n>Cancel}"
+						press="._closeDialog"
+						ariaHasPopup="Dialog" />
+				</content>
+			</Toolbar>
+		</footer>
+    </Dialog>
+</core:FragmentDefinition>

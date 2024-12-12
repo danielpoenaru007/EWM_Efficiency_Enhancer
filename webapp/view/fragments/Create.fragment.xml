@@ -1,0 +1,50 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.comp.smartform"
+    xmlns:sf="sap.ui.comp.smartfield">
+	<Dialog id="createDialog" title="{i18n>dialogCreate}" contentWidth="20%" draggable="true" resizable="true"	>
+    <content>
+    	<form:SmartForm id="sfCreate" editable="true">
+			<form:layout>
+				<form:ColumnLayout id="_IDGenColumnLayoutCreate" columnsM="1" columnsL="1" columnsXL="1"/>
+			</form:layout>
+            <form:Group id="createG1" >
+                <form:GroupElement id="createWH-fields">
+					<sf:SmartField id="warehouseNo"  value="{Warehouse}" mandatory = "true" change="onChangeWH" />
+				</form:GroupElement>
+				<form:GroupElement id="createEntitled-fields">
+					<sf:SmartField id="entitled"  value="{Entitled}"  change="onChangeEntitled" />
+				</form:GroupElement>
+    			<form:GroupElement id="createG1-fields">
+					<sf:SmartField id="createPutAway"  value="{PutawayControl}" />
+				</form:GroupElement>
+                <form:GroupElement id="createG2-fields">
+                    <sf:SmartField id="createStorSectInd"  value="{StorSectInd}" />
+                    
+				</form:GroupElement>
+                	<form:GroupElement id="createG3-fields">
+                        <sf:SmartField id="createStockRemovalCtrl"  value="{StockRemovalCtrl}" />
+				</form:GroupElement>
+                <form:GroupElement id="createG4-fields">
+                    <sf:SmartField id="createBulkStorage"  value="{BulkStorage}" />
+				</form:GroupElement>
+          	</form:Group>
+		</form:SmartForm>      
+    </content>
+    <footer>
+			<Toolbar id="_createIDGenToolbar1">
+				<content>
+					<ToolbarSpacer id="_createIDGenToolbarSpacer" />
+					<Button id="createSubmitBtn" 
+							text="{i18n>Submit}"
+							press=".onCreateWarehouse" />
+					<Button id="createCancelBtn"
+						text="{i18n>Cancel}"
+						press=".closeCreateDialog"
+						ariaHasPopup="Dialog" />
+				</content>
+			</Toolbar>
+		</footer>
+    </Dialog>
+</core:FragmentDefinition>
