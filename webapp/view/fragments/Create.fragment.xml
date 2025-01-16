@@ -14,7 +14,7 @@
 					<sf:SmartField id="warehouseNo"  value="{Warehouse}" mandatory = "true" change="onChangeWH" />
 				</form:GroupElement>
 				<form:GroupElement id="createEntitled-fields">
-					<sf:SmartField id="entitled"  value="{Entitled}"  change="onChangeEntitled" />
+					<sf:SmartField id="entitled"  value="{Entitled}" mandatory = "true"  change="onChangeEntitled" />
 				</form:GroupElement>
     			<form:GroupElement id="createG1-fields">
 					<sf:SmartField id="createPutAway"  value="{PutawayControl}" />

@@ -185,6 +185,7 @@ sap.ui.define([
                     that.getView().getModel().setProperty("StorSectInd", oDialogObject.StorSectInd ? oDialogObject.StorSectInd : that.getView().getModel().getProperty(oItem.getBindingContext().sPath).StorSectInd , oContext);
                     that.getView().getModel().setProperty("StockRemovalCtrl", oDialogObject.StockRemovalCtrl ? oDialogObject.StockRemovalCtrl : that.getView().getModel().getProperty(oItem.getBindingContext().sPath).StockRemovalCtrl , oContext);
                     that.getView().getModel().setProperty("BulkStorage", oDialogObject.BulkStorage ? oDialogObject.BulkStorage : that.getView().getModel().getProperty(oItem.getBindingContext().sPath).BulkStorage , oContext);
+                    that.getView().getModel().setProperty("Entitled", oDialogObject.Entitled ? oDialogObject.Entitled : that.getView().getModel().getProperty(oItem.getBindingContext().sPath).Entitled , oContext);
                 });
 
                 this.deleteModelEntry(this.oContextNewEntry); 
@@ -255,6 +256,7 @@ sap.ui.define([
                     that.getView().getModel().setProperty("StorSectInd", oDialogObject.StorSectInd ? oDialogObject.StorSectInd : that.getView().getModel().getProperty(oItem.getBindingContext().sPath).StorSectInd , oContext);
                     that.getView().getModel().setProperty("StockRemovalCtrl", oDialogObject.StockRemovalCtrl ? oDialogObject.StockRemovalCtrl : that.getView().getModel().getProperty(oItem.getBindingContext().sPath).StockRemovalCtrl , oContext);
                     that.getView().getModel().setProperty("BulkStorage", oDialogObject.BulkStorage ? oDialogObject.BulkStorage : that.getView().getModel().getProperty(oItem.getBindingContext().sPath).BulkStorage , oContext);
+                    that.getView().getModel().setProperty("Entitled", oDialogObject.Entitled ? oDialogObject.Entitled : that.getView().getModel().getProperty(oItem.getBindingContext().sPath).Entitled , oContext);
                 });
 
                 this.deleteModelEntry(this.oContextNewEntry);
@@ -300,7 +302,7 @@ sap.ui.define([
                         }.bind(this),
                         error: function (oError) { 
                             sap.m.MessageToast.show(this.getView().getModel("i18n").getResourceBundle().getText("saveErrorMessage")); //"An error appear, please try again!");
-                        }
+                        }.bind(this)
                     });
 
                 }
